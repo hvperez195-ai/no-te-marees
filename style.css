@@ -354,4 +354,42 @@ section.visible {
     line-height: 1.7;
     margin-bottom: 40px;
     color: rgba(255, 255, 255, 0.8);
+
     font-weight: 400;
+    /* Caja azul minimalista */
+.validation-box {
+  background: rgba(0, 200, 255, 0.1); /* azul claro brillante transparente */
+  border: 2px solid #00c8ff; /* borde azul */
+  border-radius: 12px;       /* bordes redondos */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #fff;
+  text-align: left;
+  animation: rotateBox 10s infinite linear;
+}
+
+/* Animación suave de rotación */
+@keyframes rotateBox {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(-1deg); } /* pequeño giro a la izquierda */
+  100% { transform: rotate(0deg); }
+}
+    /* Footer bonito centrado */
+footer {
+  background: #0d0d0d;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+}
+
+footer a {
+  color: #00c8ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
