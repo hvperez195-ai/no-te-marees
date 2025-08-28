@@ -141,101 +141,49 @@
     </section>
 
     <!-- Reseñas -->
-    <section id="resenas" class="resenas">
-        <h2 class="section-title">Validación</h2>
-        <div class="reviews-container">
-            <div class="reviews-slider">
-                <div class="review-card">
-                    <p class="review-text">El CRM automatizado transformó nuestra operación. 70 horas mensuales recuperadas, precisión del 100%. Inversión recuperada en dos meses.</p>
-                    <div class="review-author">María González</div>
-                    <div class="review-company">DIR // INMOBILIARIA PREMIUM</div>
-                </div>
-                
-                <div class="review-card">
-                    <p class="review-text">ChatBot implementado sin interrupciones. Atención 24/7 operativa desde día uno. Satisfacción del cliente aumentó 40%.</p>
-                    <div class="review-author">Dr. Carlos Ruiz</div>
-                    <div class="review-company">CEO // CLÍNICA DENTAL SONRISA</div>
-                </div>
-                
-                <div class="review-card">
-                    <p class="review-text">Automatización de marketing generó 300% más contenido optimizado. ROI medible desde la primera semana de implementación.</p>
-                    <div class="review-author">Ana Martínez</div>
-                    <div class="review-company">FOUNDER // PROPIEDADESMADRID</div>
-                </div>
-                
-                <div class="review-card">
-                    <p class="review-text">Sistema de evaluación de CV redujo tiempo de selección en 85%. Precisión en filtrado inicial del 95%.</p>
-                    <div class="review-author">Luis Fernández</div>
-                    <div class="review-company">RRHH DIR // TALENTOCORP</div>
-                </div>
-                
-                <div class="review-card">
-                    <p class="review-text">Resultados medibles, implementación sin fricción. A los 16 años demuestra más experiencia práctica que consultores senior.</p>
-                    <div class="review-author">Roberto Silva</div>
-                    <div class="review-company">CTO // INNOVACIÓN DIGITAL</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="resenas" class="resenas">
+    <h2 class="section-title">Validación</h2>
+    
+    <!-- Caja Azul Minimalista -->
+    <div class="validation-box">
+        <p>El CRM automatizado transformó nuestra operación. 70 horas mensuales recuperadas, precisión del 100%. Inversión recuperada en dos meses.</p>
+        <strong>María González</strong><br>
+        <span>DIR // INMOBILIARIA PREMIUM</span>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">NO TE MAREES</div>
-            <p class="footer-text">
-                Automatización empresarial con resultados medibles.<br>
-                Soluciones IA que generan ahorro real y optimización demostrable.
-            </p>
-            <div class="footer-bottom">
-                <p>© 2025 NO TE MAREES — TODOS LOS DERECHOS RESERVADOS</p>
-            </div>
-        </div>
-    </footer>
+    <div class="validation-box">
+        <p>ChatBot implementado sin interrupciones. Atención 24/7 operativa desde día uno. Satisfacción del cliente aumentó 40%.</p>
+        <strong>Dr. Carlos Ruiz</strong><br>
+        <span>CEO // CLÍNICA DENTAL SONRISA</span>
+    </div>
 
-    <script>
-        // Observador de intersección
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    <div class="validation-box">
+        <p>Automatización de marketing generó 300% más contenido optimizado. ROI medible desde la primera semana de implementación.</p>
+        <strong>Ana Martínez</strong><br>
+        <span>FOUNDER // PROPIEDADESMADRID</span>
+    </div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
+    <div class="validation-box">
+        <p>Sistema de evaluación de CV redujo tiempo de selección en 85%. Precisión en filtrado inicial del 95%.</p>
+        <strong>Luis Fernández</strong><br>
+        <span>RRHH DIR // TALENTOCORP</span>
+    </div>
 
-        // Observar secciones
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
+    <div class="validation-box">
+        <p>Resultados medibles, implementación sin fricción. A los 16 años demuestra más experiencia práctica que consultores senior.</p>
+        <strong>Roberto Silva</strong><br>
+        <span>CTO // INNOVACIÓN DIGITAL</span>
+    </div>
+</section>
 
-        // Mostrar home inmediatamente
-        document.querySelector('#home').classList.add('visible');
-
-        // Navegación suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
-
-        // Control de reseñas
-        const reviewsSlider = document.querySelector('.reviews-slider');
-        reviewsSlider.addEventListener('mouseenter', () => {
-            reviewsSlider.style.animationPlayState = 'paused';
-        });
-        reviewsSlider.addEventListener('mouseleave', () => {
-            reviewsSlider.style.animationPlayState = 'running';
-        });
-    </script>
+<!-- Footer -->
+<footer>
+    <p><strong>NO TE MAREES</strong></p>
+    <p>Automatización empresarial con resultados medibles.<br>
+    Soluciones IA que generan ahorro real y optimización demostrable.</p>
+    <p>© 2025 NO TE MAREES — TODOS LOS DERECHOS RESERVADOS</p>
+</footer>
 </body>
 
 </html>
+
